@@ -1,0 +1,411 @@
+*
+    margin: 0
+    padding: 0
+    font-family: "Montserrat"
+    scroll-behavior: smooth
+body
+    overflow-x: hidden
+    scroll-behavior: smooth
+a
+    text-decoration: none
+    color: black
+#myVideo 
+    position: absolute
+    z-index: -100
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    filter: brightness(0.5)
+.mainPage
+    height: 100vh
+    width: 100vw
+    background-video: url("")
+    background-position-x: -50px
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    align-items: flex-end
+    color: white !important
+    flex-direction: column
+    .nav
+        
+        padding: 67px
+        padding-top: 58px !important
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 1.5rem
+        font-weight: 800
+        width: 50%
+        text-transform: uppercase
+        a
+            color: white
+            margin-bottom: 2rem
+            transition: all .2s
+            &:hover
+                transform: scale(1.1)
+            &:nth-last-child(1)
+                margin-bottom: 0 !important
+
+    h1
+        position: absolute
+        padding-right: 5rem
+        font-weight: 800
+        font-size: 5rem
+        margin-top: 40vh
+        text-transform: uppercase
+.about
+    display: flex
+    justify-content: center
+    align-items: center
+    &__container
+        padding: 100px 275px 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &__left_side
+            width: 35%
+            .name
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                p
+                    margin-left: 2rem
+                    font-weight: 500
+                    font-size: 2rem
+            .text
+                margin-top: 2rem
+                span
+
+                    font-weight: 400
+                    font-size: 1rem
+                    color: rgba(0, 0, 0, 0.86)
+            .social
+                width: 60%
+                margin-top: 2rem
+                display: flex
+                justify-content: space-between
+                align-items: center
+                transition: all .2s
+                img
+                    transition: all .2s
+                    max-width: 30px
+                    &:hover
+                        transform: scale(1.5)
+        &__right_side
+            padding-left: 5rem
+            width: 75%
+            h1
+                border-bottom: 1px solid #DDDCDC
+                font-weight: 500
+                padding-bottom: 2rem
+            .concerts
+                width: 100%
+                
+                .concert
+                    &:nth-child(1)
+                        color: #000000
+                        
+                        .status
+                            button
+                                width: 100%
+                                height: 2rem
+                                border: none !important
+                                background-color: black
+                                color: white
+                                border-radius: 22px
+                                transition: all .1s
+                                cursor: pointer
+                                &:hover
+                                    transform: scale(1.1)
+                    border-bottom: 2px solid #DDDCDC
+                    border-top: 2px solid #DDDCDC
+                    border-top: none
+                    height: 100px
+                    display: flex
+                    padding: 0 .5rem
+                    &:nth-last-child(1)
+                        border-bottom: 1px solid #DDDCDC
+                    justify-content: space-between
+                    align-items: center
+                    color: #999999
+                    &:hover
+                        background-color: #0000000a
+                    .genre
+                        p
+                            font-weight: 300
+                            text-transform: uppercase
+                            padding-bottom: .5rem
+                        span
+                            
+                            font-weight: 500
+                    .date
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 30%
+                        .number
+                            font-weight: 400
+                            font-size: 3rem
+                        .day
+                            margin-left: 1rem
+                            p
+                                text-transform: uppercase
+                                padding-bottom: .5rem
+                            span
+                                font-weight: 500
+                    .city
+                        width: 20%
+
+                        margin-top: .5rem
+                        height: 50%
+                        text-transform: uppercase
+                    .status
+                        width: 20%
+                        text-align: center  
+.photos
+    .container
+        // overflow: hidden
+        margin: 100px 275px 0
+    &__list
+       .photo
+            img
+                min-height: 10px
+                max-height: 309px      
+.last-concerts
+    h1
+        margin-top: 140px !important
+        font-weight: 700 !important
+        font-size: 2rem
+        margin: 0 275px 0
+        text-transform: uppercase !important
+    .concerts
+        height: 100%
+    .container
+        margin: 100px 275px 0
+        height: 100%
+        .video
+            overflow: hidden
+            border-radius: 10px
+            width: 30%
+            height: 100%
+            iframe
+                border-radius: 10px
+                width: 100%
+        .video__list
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+.track-list
+    h1, .date
+        margin-top: 140px !important
+        font-weight: 700 !important
+        font-size: 2rem
+        margin: 0 275px 0
+        text-transform: uppercase !important
+    .container
+        margin: 100px 275px 0
+        display: flex
+        justify-content: center
+        align-items: center
+    &__music
+        width: 100%
+        padding: 20px 20px
+        border: 1px solid #E0E0E0
+        border-radius: 24px
+    .track-list__musics__about
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        width: 100%
+        p  
+            font-weight: 500
+            font-size: 1rem
+            &:nth-child(1)
+                width: 10%
+            &:nth-child(2)
+                margin-left: 6%
+    .musics
+        margin-top: 3rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        .time
+            font-weight: 400
+            width: 10%
+        .name
+            font-weight: 500   
+            width: 20%
+            p
+                margin-bottom: .5rem
+            span
+                color: rgba(34, 34, 34, 0.58)
+        .description
+            font-weight: 500
+            width: 30%
+            color: rgba(34, 34, 34, 0.58)
+        .artist
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            img
+                max-height: 50px !important
+            p
+                margin-left: .5rem
+                font-weight: 500
+        .listen
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                
+                margin-left: .5rem
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+            transition: all .1s
+            &:hover
+                transform: scale(1.1)
+.footer
+    margin-top: 2rem
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: rgba(0, 0, 0, 0.68)
+    margin-bottom: 2rem
+
+
+
+
+@media screen and (max-width: 1560px)
+    .mainPage .nav
+        width: 80%
+
+@media screen and (max-width: 1472px)
+    .about__container
+        padding: 100px 100px 0
+    .photos .container
+        margin: 100px 100px 0
+    .last-concerts 
+        h1
+            margin-left: 100px
+    .last-concerts .container
+        margin: 100px 100px 0
+    .track-list h1, .track-list .date
+        margin: 0 100px 0
+    .track-list .container
+        margin: 100px 100px 0
+@media screen and (max-width: 1155px)
+    .about__container
+        flex-direction: column
+        &__left_side
+            width: 100%
+        &__right_side
+            margin-top: 2rem
+            width: 100%
+            padding-left: 0
+    .about__container__left_side .social
+        width: 25%
+    .mainPage .nav
+        a
+            display: none
+            &:nth-last-child(1)
+                display: block
+                position: absolute
+                right: 10%
+                img
+                    max-width: 50vw
+                top: 10%
+@media screen and (max-width: 974px)
+    .mainPage 
+        h1
+            margin: 0
+            padding: 0
+            font-size: 3rem
+            text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+
+@media screen and (max-width: 843px)
+    .mainPage .nav
+        a
+            display: none
+    .about__container
+        padding: 50px 50px 0
+    .photos .container
+        margin: 50px 50px 0
+    .last-concerts 
+        h1
+            margin-left: 50px
+    .last-concerts .container
+        margin: 50px 50px 0
+    .track-list h1, .track-list .date
+        margin: 0 50px 0
+    .track-list .container
+        margin: 50px 50px 0
+@media screen and (max-width: 752px)
+    .about__container__right_side .concerts .concert .date .number
+        font-size: 2rem
+    .mainPage .nav
+        width: auto
+    .mainPage h1
+        width: auto
+        font-size: 1.5rem
+    .track-list .musics .description
+        display: none
+    .last-concerts .container .video__list
+        flex-direction: column
+    .last-concerts .container .video
+        width: 100%
+        margin-top: 50px
+@media screen and (max-width: 638px)
+    .about__container__right_side .concerts .concert .genre
+        display: none
+    .about__container__right_side .concerts .concert
+        padding: none
+@media screen and (max-width: 529px)
+    .track-list .musics .artist
+        display: none
+@media screen and (max-width: 406px)
+    .mainPage .nav
+        a
+            display: none
+    .about__container
+        padding: 50px 10px 0
+    .photos .container
+        margin: 50px 10px 0
+    .last-concerts 
+        h1
+            margin-left: 10px
+    .last-concerts .container
+        margin: 50px 10px 0
+    .track-list h1, .track-list .date
+        margin: 0 10px 0
+    .track-list .container
+        margin: 50px 10px 0
+    .about__container__right_side .concerts .concert
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        height: auto
+        padding-left: 30px
+        .city, .status, .date
+            margin-top: 1.5rem
+        .status
+            margin-bottom: 1.5rem
+    .about__container__right_side .concerts .concert:nth-child(1) .status button
+        width: 100% !important
+        height: 40px
+        width: 150px !important
+        margin-bottom: 2rem
+    .photos
+        margin: 0
+        .photos__list .photo img
+            max-width: 80%
+            margin-left: 10%
